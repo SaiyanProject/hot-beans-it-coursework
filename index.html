@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <title>Hot Beans</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <h2><a href="#home_area"><img src="static/home/logo_home.png" alt="Hot Beans"></a></h2>
+    <nav>
+      <li><a href="#home_area">Home</a></li>
+      <li><a href="#about_area">About</a></li>
+      <li><a href="#portfolio_area">Portfolio</a></li>
+      <li><a href="#courses_area">Courses</a></li>
+      <li><a href="#contact_area">Contact</a></li>
+    </nav>
+  </header>
+
+  <section class="banner-area" id="home_area">
+    <div class="banner-img"></div>
+    <h1>Hot Beans</h1>
+    <h3>Web Development Done Right</h3>
+    <a href="#contact_area" class="banner-btn">Contact Us</a>
+  </section>
+
+  <section class="about-area" id="about_area">
+    <h3 class="section-title">About Us</h3>
+    <ul class="about-content">
+      <li class="about-left"></li>
+      <li class="about-right">
+        <h2>About our Company</h2>
+        <p>We are a small web development company based in United Kingdom London, Enfield. We specialise in front-end and back-end web development.
+          Our goal is to reach higher end web development companies focused on maximizing security features with full functional reliability.
+          If you are experienced enough within the fields of web development (Front-End Developer, Back-End Developer, Experienced in the databases field or Web Designer) and are interested in reaching our goals, you can fill in our contact form at the bottom of our website.
+        </p>
+        <a class="about-btn" id="open">More Info</a>
+      </li>
+    </ul>
+
+    <div class="modal-area" id="modal_area">
+      <div class="modal">
+        <h1>Social Platforms</h1>
+        <ul class="modal-content">
+          <p>You can find us on:</p>
+          <li><a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-discord fa-lg"></i></a></li>
+          <li>
+        </ul>
+        <a class="close-btn" id="close">
+          Close
+        </a>
+      </div>
+      <script src="modal.js"></script>
+    </div>
+    
+  </section>
+
+  <section class="portfolio-area" id="portfolio_area">
+    <h3 class="section-title">Portfolio</h3>
+    <ul class="portfolio-content">
+      <li class="portfolio-left"></li>
+      <li class="portfolio-right">
+        <h2>Our Past Web Development Work</h2>
+        <div class="card">
+          <div class="card-bg" style="background-image:url(static/portfolio/1.jpg)">
+            <div class="content">
+              <div class="data">
+                <div class="circle">
+                  <i class="fa-solid fa-cash-register"></i>
+                </div>
+                <div class="detail">
+                  <h4 class="title">Auction</h4>
+                  <p>Advertising and Selling products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-bg" style="background-image:url(static/portfolio/2.jpg)">
+            <div class="content">
+              <div class="data">
+                <div class="circle">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="detail">
+                  <h4 class="title">Coza Store</h4>
+                  <p>Clothing eCommerce Website</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="cards.js"></script>
+      </li>
+    </ul>
+  </section>
+
+  <section class="courses-area" id="courses_area">
+    <h3 class="section-title">Courses</h3>
+    <ul class="courses-content">
+      <li class="courses">
+        <h3><a href="https://www.udemy.com/course/web-design-html-css-js/?utm_source=adwords&utm_medium=udemyads&utm_campaign=WebDesign_v.PROF_la.EN_cc.UK_ti.8320&utm_content=deal4584&utm_term=_._ag_73899898753_._ad_532713166765_._kw__._de_c_._dm__._pl__._ti_dsa-774930030209_._li_1006886_._pd__._&matchtype=&gclid=EAIaIQobChMIxtKLyo-o-gIVlpftCh2nXw8EEAAYBCAAEgIWTvD_BwE">Front-end web developer</a></h3>
+        <p>Learn all the core fundamentals of modern web design, covering all the commonly used syntax for HTML and CSS. This course is designed to get you started quickly and easily with creating web pages.
+
+Course covers all the essentials so that you can begin quickly on your journey to create amazing looking websites. Add JavaScript to make your web pages come to life...</p>
+        <div class="courses-udemy"><img src="static/courses/1.png" alt="Front-End Course"></div>
+        <h3><a href="https://www.udacity.com/course/intro-to-backend--ud171">Intro to Backend</a></h3>
+        <p>This course presents an overview of a variety of Web backend topics: handling user input, producing templated output, storing information in databases and data stores, and building systems with secure user accounts...</p>
+        <div class="courses-ruby"><img src="static/courses/2.jpg" alt="Back-End Course"></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact-area" id="contact_area">
+    <h3 class="section-title">Contact Us</h3>
+    <form class="contact-content" onsubmit="sendEmail()">
+      <p>Want to know more? Fill in our form here!</p>
+      <input type="text" id="name" class="field" placeholder="Full Name">
+      <input type="email" id="email" class="field" placeholder="Email Address">
+      <input type="text" id="phone_number" class="field" placeholder="Phone Number">
+      <textarea class="field area" id="message" placeholder="Message"></textarea>
+      <button class="contact-btn" type="submit">Send</button>
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="form.js"></script>
+  </section>
+
+  <footer>
+    <p>Educational purpose website, coursework project made by LoukasK. </p>
+  </footer>
+  
+</body>
+
+</html>
